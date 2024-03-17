@@ -1,0 +1,47 @@
+:root{
+    --bright: #ffd100;
+    --body_colr: #333533;
+    --yellow: #ffee32;
+    --Lgrey :#d6d6d6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kings,Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #333533;
+}
+nav {
+    height: 8vh;
+    width: 100vw;
+    background-color:var(--bright);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3%;
+}
+
+.menu {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#three_bars {
+    font-size: 1.5rem; /* Adjust the font size of the icon */
+    color: #000000;
+}
+.logo p {
+    font-weight:bolder;
+    font-size: larger;
+}
+.message img {
+    height: 1.4rem;
+    width: 2rem;    
+    margin-top: 5px;
+}
+.chat{
+    color: greenyellow;
+}
