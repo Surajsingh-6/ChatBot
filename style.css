@@ -45,3 +45,11 @@ nav {
 .chat{
     color: greenyellow;
 }
+.avatar{
+    height: 50vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    /* align-items: end; */
+}
