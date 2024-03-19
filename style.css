@@ -123,6 +123,10 @@ span {
   margin-bottom: 1rem;
 }
 
+.nav__list a {
+  text-decoration: none;
+}
+
 .nav__list h1::after {
   content: "";
   position: absolute;
