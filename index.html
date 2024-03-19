@@ -16,28 +16,101 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
+    <div class="nav__list change" id="nav" onclick="handleClick()">
+      <h1>Schemes</h1>
+      <ul>
+        <li><a href="">Citizen</a></li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/5">BC / BCM</a>
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/14">Farmers</a>
+        </li>
+        <li><a href="">Government Employee</a></li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/13"
+            >Handloom Weavers</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/18"
+            >Journalist</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/16"
+            >Manufacturers</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/2"
+            >Pregnant Womens</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/19">Widow</a>
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/6">SC/ST</a>
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/8">Students</a>
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise/7"
+            >Unemployed</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tn.gov.in/scheme/beneficiary_wise"
+            >All Schemes</a
+          >
+        </li>
+      </ul>
+    </div>
     <nav>
-      <div class="menu">
-        <i id="three_bars" class="fas fa-bars"></i>
+      <div class="menu" id="three__bars">
+        <i id="three_bars" class="fas fa-bars" onclick="handleClick()"></i>
       </div>
+
       <div class="logo">
         <p>GOVAI</p>
       </div>
       <div class="message">
-        <img src="chatbot.png" alt="chatbot-icon" />
+        <img src="./components/chatbot.png" alt="chatbot-icon" />
       </div>
     </nav>
-    <main>
+
+    <main id="main">
       <div class="avatar">
-        <img src="avatar.png" alt="avatar" />
+        <p>
+          Hello! Welcome to <br />
+          <span>TNGOVAI</span> Bot!
+        </p>
       </div>
       <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
-      <script
-        src="https://mediafiles.botpress.cloud/c9067c2c-e5a5-4a2d-a2fe-0144d5245be0/webchat/config.js"
-        defer
-      ></script>
+      <script>
+        window.botpressWebChat.init({
+          composerPlaceholder: "Hello..",
+          botConversationDescription:
+            "TNGOVAI is an AI-powered chatbot designed to assist users in navigating through various government schemes and scholarships available in India",
+          botId: "c9067c2c-e5a5-4a2d-a2fe-0144d5245be0",
+          hostUrl: "https://cdn.botpress.cloud/webchat/v1",
+          messagingUrl: "https://messaging.botpress.cloud",
+          clientId: "c9067c2c-e5a5-4a2d-a2fe-0144d5245be0",
+          webhookId: "ea3192fc-c6be-4615-9b6a-c743ba3536a8",
+          lazySocket: true,
+          themeName: "prism",
+          botName: "TNGOVAI",
+          frontendVersion: "v1",
+          useSessionStorage: true,
+          enableConversationDeletion: true,
+          theme: "prism",
+          themeColor: "#2561eb",
+        });
+      </script>
     </main>
   </body>
+  <script src="./script.js"></script>
 </html>
