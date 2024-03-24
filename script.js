@@ -9,5 +9,3 @@ function handleClick() {
     main.style.display = "none";
   }
 }
-
-// hello
